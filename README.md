@@ -23,7 +23,7 @@ Two reasons:
 4) That's it!
 
 ## Running removeExif.py
-1) Download / clone this program from Github
+1) Download or clone this program from Github
 2) Copy removeExif.py into any directory that you wish you process images inside
 3) Open of a command prompt, terminal, or shell and change directory to your image folder 
 3) Run `python removeExif.py`
