@@ -5,7 +5,6 @@
 # RJ Kunde
 # 5/11/2020
 # https://github.com/rjkunde/removeExif
-#
 
 from PIL import Image
 import time
@@ -19,7 +18,9 @@ def loadProgram():
     print("Python jpg exif data remover by RJ Kunde - 2020")
     time.sleep(1.0)
     main()
-               
+    
+# Main Menu Function 
+# Provides choices, captures user input              
 def main():
     
     # Main Menu
@@ -42,7 +43,9 @@ def main():
         print("Invalid Selection")
         print("Please try again")
         main()
-        
+
+# Copy Mode Menu
+# Allows user to kick-off image clone and de-exif function copyMode()        
 def copyMenu():
     print()
     print()
@@ -60,7 +63,11 @@ def copyMenu():
         print("Invalid Selection")
         print("Please try again")
         copyMenu()
-    
+
+# Copy Mode Main Function
+# Iterates over all files in a directory
+# Checks for jpg or jpeg, ignores already processed files (noexif_), ignores removeExif.py or any other filetypes
+# Opens image, creates a new saved copy which doesn't contain EXIF data 
 def copyMode():
     print("Starting Python exif data remover in Copy Mode!")
     for filename in os.listdir(directory):
@@ -82,6 +89,8 @@ def copyMode():
     print()               
     print("Your images have been processed! See output log above for any issues.")
 
+# Overwrite Mode Menu
+# Allows user to kick-off image de-exif function overwriteMode() 
 def overwriteMenu():
     print()
     print()
@@ -100,6 +109,10 @@ def overwriteMenu():
         print("Please try again")
         overwriteMenu()
 
+# Overwrite Mode Main Function
+# Iterates over all files in a directory
+# Checks for jpg or jpeg, ignores already processed files (noexif_), ignores removeExif.py or any other filetypes
+# Opens image, removes EXIF data via PIL Open(), saves file - thus removing EXIF data
 def overwriteMode():
     print("Starting Python exif data remover in Overwrite Mode!")
     for filename in os.listdir(directory):
