@@ -8,7 +8,7 @@ This program leverages the Python Image Library and your input to operate in one
 ## Why use this?
 Two reasons:
 1) If you wish to wipe EXIF data from your images (GPS location, detailed camera specifications, etc).
-3) If you're an avid user of social media, you'll likely wish to post EXIF sanitized photos so people can't track you.
+3) If you're a user of social media, then you'll likely wish to post EXIF sanitized photos so people can't track you.
 2) Space savings. Running in "Overwrite Mode" allows images to require 40-70% less space on your computer on average.
 
 ## Prerequisites
