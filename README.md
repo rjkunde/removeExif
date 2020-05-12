@@ -11,7 +11,7 @@ Two reasons:
 3) If you're an avid user of social media, you'll likely wish to post EXIF sanitized photos so people can't track you.
 2) Space savings. Running in "Overwrite Mode" allows images to require 40-70% less space on your computer on average.
 
-## Prerequsites
+## Prerequisites
 * Python 3
 * Python Image Library "Pillow"
 * A directory with .jpg images in it
