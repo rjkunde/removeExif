@@ -6,7 +6,7 @@ This is a useful program to remove unnecessary  data from jpg image files. Moder
 This program leverages the Python Image Library and your input to operate in one of two modes: Copy Mode - which creates an EXIF sanitized clone of your files, or Overwrite Mode - which removes EXIF data directly from your images .
 
 ## Why use this?
-Two reasons:
+Three reasons:
 1) If you wish to wipe EXIF data from your images (GPS location, detailed camera specifications, etc).
 3) If you're a user of social media, then you'll likely wish to post EXIF sanitized photos so people can't track you.
 2) Space savings. Running in "Overwrite Mode" allows .jpg images to require 40-70% less space on your computer on average.
